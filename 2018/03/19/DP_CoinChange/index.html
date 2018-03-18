@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="candy&#39;s blog">
 <meta property="og:description" content="这篇算法笔记总结自 leetcode 第279题“Perfect Squares”和第322题“Coin Change” 【问题背景】给定一个自然数n和一个正整数集合S，使用S中的数来组合出n，求使用的最少个数。可能有无法组合的情况，用-1表示。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-18T23:49:16.000Z">
+<meta property="og:updated_time" content="2018-03-18T23:57:21.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划系列之一:Coin Change">
 <meta name="twitter:description" content="这篇算法笔记总结自 leetcode 第279题“Perfect Squares”和第322题“Coin Change” 【问题背景】给定一个自然数n和一个正整数集合S，使用S中的数来组合出n，求使用的最少个数。可能有无法组合的情况，用-1表示。">
@@ -319,7 +319,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T07:49:16+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T07:57:21+08:00">
                 2018-03-19
               </time>
             
@@ -368,7 +368,7 @@
 <blockquote>
 </blockquote>
 <p>$dp[0][0]=0, dp[0][j]=-1\&amp;j!=0$</p>
-<p>$$<br>dp[i][j]  =min\begin{cases}dp[i - 1][j] &amp; dp[i - 1][j] \neq -1\dp[i - 1][j - S[i]] + 1 &amp; j &gt; S[i],dp[i - 1][j - S[i]] \neq -1\dp[i][j - S[i]] + 1 &amp; j &gt; S[i],dp[i][j - S[i]] \neq -1\end{cases}<br>$$</p>
+<p>$$<br>dp[i][j]  =min\begin{cases}dp[i - 1][j] &amp; dp[i - 1][j] \neq -1\\dp[i - 1][j - S[i]] + 1 &amp; j &gt; S[i],dp[i - 1][j - S[i]] \neq -1\\dp[i][j - S[i]] + 1 &amp; j &gt; S[i],dp[i][j - S[i]] \neq -1\end{cases}<br>$$</p>
 <blockquote>
 </blockquote>
 <p>如果稍微修改条件，每个数字只能最多取一次，递推公式需要去掉第三行的情况。</p>
